@@ -47,6 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func checkDataStore() {
+        print("123")
         let request: NSFetchRequest<Home> = Home.fetchRequest()
         let context = coreDataManager.persistentContainer.viewContext
         do{
